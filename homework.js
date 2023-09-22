@@ -39,8 +39,8 @@ console.log(concatenateStrings(['first', 'second'], ' --> ')); // Should log "fi
 Exercise 3:
 Given an array of user objects, use map to create a new array called usersWithFullName containing user 
 objects with an additional fullName property, which is made by concatenating firstName and lastName.
-*//*
-const users = [
+*/
+/*const users = [
   { firstName: 'John', lastName: 'Doe' },
   { firstName: 'Jane', lastName: 'Smith' },
   { firstName: 'Michael', lastName: 'Jordan' },
@@ -52,19 +52,18 @@ const users = [
   { firstName: 'Galileo', lastName: 'Galilei' },
   { firstName: 'Leonardo', lastName: 'da Vinci' }
 ];
-​
-​
+
+const usersWithFullName = users.map(({ firstName, lastName }) => ({
+  fullName: `${firstName} ${lastName}`
+}));
+ 
 //your code here:
-​
-​
-//Test cases
-// console.log(usersWithFullName[0].fullName === 'John Doe'); // Should be true
-// console.log(usersWithFullName[5].fullName === 'Marie Curie'); // Should be true
-// console.log(usersWithFullName[6].fullName === 'Albert Einstein'); // Should be true
-// console.log(usersWithFullName[9].fullName === 'Leonardo da Vinci'); // Should be true
-​
-​
-​
+
+ console.log(usersWithFullName[0].fullName === 'John Doe'); // Should be true
+ console.log(usersWithFullName[5].fullName === 'Marie Curie'); // Should be true
+ console.log(usersWithFullName[6].fullName === 'Albert Einstein'); // Should be true
+ console.log(usersWithFullName[9].fullName === 'Leonardo da Vinci'); // Should be true*/
+
 /*
 Exercise 4:
 Given an array of product objects, use the map method to create a new array
