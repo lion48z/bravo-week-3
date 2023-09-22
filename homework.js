@@ -2,38 +2,44 @@
 Exercise 1:
 Write an arrow function called findMax that takes an array of numbers and returns the maximum number.
  */
-​const findMax = (arr) => {
+/*const findMax = (numbers) => {
+  return Math.max(...numbers);
+}*/
+//other Math.floor round down Math.ceil round up 
 
-    
-}
-​
-​
-//Test cases
-//console.log(findMax([1, 2, 3])); // Should log 3
-//console.log(findMax([-5, -10, -1])); // Should log -1
-//console.log(findMax([10, 20, 10, 20, 30, 20, 10])); // Should log 30
-​
-​
-​
+
+/*console.log(findMax([1, 2, 3])); // Should log 3
+console.log(findMax([-5, -10, -1])); // Should log -1
+console.log(findMax([10, 20, 10, 20, 30, 20, 10])); // Should log 30*/
+
+
+
 /*
 Exercise 2:
 Write an arrow function concatenateStrings that takes an array of strings and a separator, 
 and returns a single string made by concatenating all the strings, separated by the specified separator.
  */
-​
-​
-//Test cases
-//console.log(concatenateStrings(['apple', 'banana', 'cherry'], ', ')); // Should log "apple, banana, cherry"
-//console.log(concatenateStrings(['one', 'two', 'three'], ' & ')); // Should log "one & two & three"
-//console.log(concatenateStrings(['first', 'second'], ' --> ')); // Should log "first --> second"
-​
-​
-​
+/*const concatenateStrings = (arr1 , arr2) => {
+ 
+  return arr1.join(arr2);
+};
+    
+
+
+
+
+
+console.log(concatenateStrings(['apple', 'banana', 'cherry'], ', ')); // Should log "apple, banana, cherry"
+console.log(concatenateStrings(['one', 'two', 'three'], ' & ')); // Should log "one & two & three"
+console.log(concatenateStrings(['first', 'second'], ' --> ')); // Should log "first --> second"*/
+
+
+
 /*
 Exercise 3:
 Given an array of user objects, use map to create a new array called usersWithFullName containing user 
 objects with an additional fullName property, which is made by concatenating firstName and lastName.
-*/
+*//*
 const users = [
   { firstName: 'John', lastName: 'Doe' },
   { firstName: 'Jane', lastName: 'Smith' },
@@ -64,7 +70,7 @@ Exercise 4:
 Given an array of product objects, use the map method to create a new array
 called `productsWithTotalValue` containing product objects with an additional
 `totalValue` property, which is calculated by multiplying `price` and `quantity`.
- */
+ *//*
 const products = [
   { name: 'Widget', value: 10, quantity: 2 },
   { name: 'Gadget', value: 20, quantity: 3 },
@@ -87,7 +93,7 @@ const products = [
 Exercise 5:
 Given an array of objects representing tasks with a completed boolean property, 
 use filter to return a new array containing only the objects representing uncompleted tasks.
-*/
+*//*
 const tasks = [
   { name: 'Complete JavaScript Exercises', completed: true },
   { name: 'Attend JavaScript Workshop', completed: false },
@@ -113,12 +119,12 @@ const tasks = [
   { name: 'Participate in JavaScript Hackathon', completed: false }
 ]
 */
-​
-​
+
+
 //Exercise 6
 //Given an array of produce objects, use the filter method to create a new 
 //array containing only the ‘Fruit’ type products that have a quantity less than 10.
-​
+/*
 const produce = [
   { name: 'Apple', type: 'Fruit', quantity: 10 },
   { name: 'Carrot', type: 'Vegetable', quantity: 20 },
@@ -139,13 +145,13 @@ const produce = [
   { name: 'Grapes', type: 'Fruit', quantity: 8 }
 ]
 */
-​
-​
+
+
 //Exercise 7
 //Given an array containing three numerical values representing the dimensions of a box (length, width, height),
 //use array destructuring to assign these values to individual variables l, w, and h.
 //Log the variables to verify and use them to calculate and log the volume of the box.
-​
+/*​
 let dimensions = [30, 50, 10];
 ​
 ​
@@ -195,4 +201,4 @@ let config = {
   //your code here
 }
 ​
-//your code here*
+//your code here* */
