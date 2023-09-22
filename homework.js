@@ -64,22 +64,30 @@ const usersWithFullName = users.map(({ firstName, lastName }) => ({
  console.log(usersWithFullName[6].fullName === 'Albert Einstein'); // Should be true
  console.log(usersWithFullName[9].fullName === 'Leonardo da Vinci'); // Should be true*/
 
-/*
-Exercise 4:
+
+/*Exercise 4:
 Given an array of product objects, use the map method to create a new array
 called `productsWithTotalValue` containing product objects with an additional
-`totalValue` property, which is calculated by multiplying `price` and `quantity`.
- *//*
+`totalValue` property, which is calculated by multiplying `price` and `quantity`.*/
+ 
 const products = [
   { name: 'Widget', value: 10, quantity: 2 },
   { name: 'Gadget', value: 20, quantity: 3 },
   { name: 'Doodad', value: 5, quantity: 10 }
 ];
-​
-//your code here
-​
-​
-//Expected output:
+
+const productsWithTotalValue = products.map(module => {
+  return {
+    name: module.name,
+    price: module.value,
+    quantity: module.quantity,
+    totalPrice: module.value * module.quantity 
+  }
+});
+
+console.log(productsWithTotalValue);
+
+​//Expected output:
 // [
 //   { name: 'Widget', price: 10, quantity: 2, totalPrice: 20 },
 //   { name: 'Gadget', price: 20, quantity: 3, totalPrice: 60 },
