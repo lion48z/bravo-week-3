@@ -13,6 +13,8 @@ const produce = [
   { name: 'Lettuce', type: 'Vegetable', quantity: 5 },
 ];
 
+const fruitType = produce.filter(item => item.type === 'Fruit' && item.quantity < 10);
+console.log(fruitType);
 
 
 //Expected Output:
