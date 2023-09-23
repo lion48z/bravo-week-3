@@ -17,4 +17,4 @@ const {
 
 const averageGrade = (math + science + english) / 3;
 
-console.log(`Name: ${firstName} ${lastName}, Average: ${averageGrade}`);
+console.log(`Name: ${firstName} ${lastName}'s average grade is  ${averageGrade}`);
